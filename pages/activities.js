@@ -17,7 +17,6 @@ const Index = () => (
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
-					activitie="walk"
 					siteLink="/activities/walk"
 				/>
 
@@ -29,7 +28,6 @@ const Index = () => (
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
-					activitie="bike"
 					siteLink="/activities/bike"
 				/>
 
@@ -41,7 +39,6 @@ const Index = () => (
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
-					activitie="swim"
 					siteLink="/activities/swim"
 				/>
 
@@ -53,7 +50,6 @@ const Index = () => (
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
-					activitie="canoe"
 					siteLink="/activities/canoe"
 				/>
 
@@ -65,7 +61,6 @@ const Index = () => (
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
-					activitie="paragliders"
 					siteLink="/activities/paragliders"
 				/>
 			</section>
