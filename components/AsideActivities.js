@@ -1,37 +1,22 @@
-import ActivitieLink from "../components/ActivitieLink";
+import ActivityLink from "../components/ActivityLink";
 
-const AsideActivities = () => (
+const Asideactivitys = () => (
 	<aside className="col-xs-12 col-md-2 order-sm-last">
-		<ActivitieLink
-			activitie="walk"
-			imgName="walk"
-			imgAlt="Walk."
-			title="Walk"
-		/>
+		<ActivityLink activity="walk" imgName="walk" imgAlt="Walk." title="Walk" />
 
-		<ActivitieLink
-			activitie="bike"
-			imgName="bike"
-			imgAlt="Bike."
-			title="Bike"
-		/>
+		<ActivityLink activity="bike" imgName="bike" imgAlt="Bike." title="Bike" />
 
-		<ActivitieLink
-			activitie="swim"
-			imgName="swim"
-			imgAlt="Swim."
-			title="Swim"
-		/>
+		<ActivityLink activity="swim" imgName="swim" imgAlt="Swim." title="Swim" />
 
-		<ActivitieLink
-			activitie="canoe"
+		<ActivityLink
+			activity="canoe"
 			imgName="canoe"
 			imgAlt="Canoe."
 			title="Canoe"
 		/>
 
-		<ActivitieLink
-			activitie="paragliders"
+		<ActivityLink
+			activity="paragliders"
 			imgName="paragliders"
 			imgAlt="Paragliders."
 			title="Paragliders"
@@ -49,4 +34,4 @@ const AsideActivities = () => (
 	</aside>
 );
 
-export default AsideActivities;
+export default Asideactivitys;
