@@ -9,6 +9,8 @@ const MyHead = ({ title }) => (
 		<meta name="keywords" content="Website, example" />
 		<meta name="author" content="Karol Bulwin" />
 		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<link rel="shortcut icon" href="/static/favicon.ico" />
+		<link rel="icon" sizes="16x16 32x32 64x64" href="/static/favicon.ico" />
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
