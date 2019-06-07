@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import Link from "next/link";
 
-const ActivitieLink = ({ activitie, imgName, imgAlt, title }) => (
-	<Link href={`/activities/${activitie}`}>
+const ActivityLink = ({ activity, imgName, imgAlt, title }) => (
+	<Link href={`/activities/${activity}`}>
 		<a>
 			<img
 				className="rounded"
@@ -44,11 +44,11 @@ const ActivitieLink = ({ activitie, imgName, imgAlt, title }) => (
 	</Link>
 );
 
-ActivitieLink.propTypes = {
-	activitie: PropTypes.string.isRequired,
+ActivityLink.propTypes = {
+	activity: PropTypes.string.isRequired,
 	imgName: PropTypes.string.isRequired,
 	imgAlt: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired
 };
 
-export default ActivitieLink;
+export default ActivityLink;
