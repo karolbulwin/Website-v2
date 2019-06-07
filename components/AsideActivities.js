@@ -70,33 +70,6 @@ const AsideActivities = () => (
 				width: 100%;
 				text-align: center;
 			}
-			a {
-				color: rgba(255, 255, 255, 0.5);
-				transition-duration: 200ms;
-			}
-			img {
-				width: 4.375em;
-				height: 4.375em;
-			}
-			h6 {
-				margin-top: 0.125em;
-				margin-bottom: 0.875em;
-			}
-			aside a:hover {
-				text-decoration: none;
-				color: rgba(255, 255, 255, 0.75);
-			}
-			aside a:hover img {
-				box-shadow: 0.1em 0.1em 0.8em 0.0325em rgba(0, 0, 0, 0.3),
-					0.1em 0.1em 0.8em 0.0325em rgba(255, 255, 255, 0.3);
-			}
-			@media screen and (max-width: 47.9375em) {
-				a {
-					display: inline-block;
-					margin-left: 2%;
-					margin-right: 2%;
-				}
-			}
 		`}</style>
 	</aside>
 );
