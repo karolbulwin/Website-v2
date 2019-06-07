@@ -1,6 +1,6 @@
 import Layout from "../components/MyLayout.js";
 import Head from "../components/Head.js";
-import Activitie from "../components/Activitie";
+import Card from "../components/Card";
 
 const Index = () => (
 	<>
@@ -9,8 +9,8 @@ const Index = () => (
 			<section className="col-sm-9 col-md-10 order-sm-last order-lg-first">
 				<h1 className="display-4 text-center my-4">Choose your way</h1>
 
-				<Activitie
-					imgName="walk"
+				<Card
+					imgName="a_walk"
 					imgAlt="Walk"
 					title="Walk"
 					decsription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -18,10 +18,11 @@ const Index = () => (
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
 					activitie="walk"
+					siteLink="/activities/walk"
 				/>
 
-				<Activitie
-					imgName="bike"
+				<Card
+					imgName="a_bike"
 					imgAlt="Bike"
 					title="Bike"
 					decsription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -29,10 +30,11 @@ const Index = () => (
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
 					activitie="bike"
+					siteLink="/activities/bike"
 				/>
 
-				<Activitie
-					imgName="swim"
+				<Card
+					imgName="a_swim"
 					imgAlt="Swim"
 					title="Swim"
 					decsription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -40,10 +42,11 @@ const Index = () => (
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
 					activitie="swim"
+					siteLink="/activities/swim"
 				/>
 
-				<Activitie
-					imgName="canoe"
+				<Card
+					imgName="a_canoe"
 					imgAlt="Canoe"
 					title="Canoe"
 					decsription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -51,10 +54,11 @@ const Index = () => (
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
 					activitie="canoe"
+					siteLink="/activities/canoe"
 				/>
 
-				<Activitie
-					imgName="paragliders"
+				<Card
+					imgName="a_paragliders"
 					imgAlt="Paragliders"
 					title="Paragliders"
 					decsription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -62,6 +66,7 @@ const Index = () => (
 							enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea commodo consequat."
 					activitie="paragliders"
+					siteLink="/activities/paragliders"
 				/>
 			</section>
 		</Layout>
