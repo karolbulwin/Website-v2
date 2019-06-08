@@ -18,6 +18,7 @@ const CountryLink = ({ country, imgName, imgAlt, title, router }) => {
 	const handleClick = e => {
 		e.preventDefault();
 		router.push(href);
+		window.scrollTo(0, 0);
 	};
 
 	return (
