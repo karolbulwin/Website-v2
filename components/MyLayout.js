@@ -52,16 +52,16 @@ const Layout = ({ children, hide }) => {
 						scroll-behavior: smooth;
 					}
 
-				h1,
-				h2 {
-					text-shadow: 1.5px 1.3px 4px rgba(0, 0, 0, 0.3);
-				}
-				h1,
-				h2,
-				h3,
-				p {
-					user-select: text;
-				}
+					h1,
+					h2 {
+						text-shadow: 1.5px 1.3px 4px rgba(0, 0, 0, 0.3);
+					}
+					h1,
+					h2,
+					h3,
+					p {
+						user-select: text;
+					}
 
 					.using-mouse :focus:not(:disabled) {
 						outline: none;
@@ -71,11 +71,12 @@ const Layout = ({ children, hide }) => {
 						outline-style: solid;
 						outline-width: 0.125em;
 					}
-			`}</style>
-		</main>
-		<Footer />
-	</>
-);
+				`}</style>
+			</main>
+			<Footer />
+		</>
+	);
+};
 
 Layout.propTypes = {
 	children: PropTypes.node.isRequired,
