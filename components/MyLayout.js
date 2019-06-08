@@ -45,12 +45,12 @@ const Layout = ({ children, hide }) => {
 						box-sizing: border-box;
 					}
 					html {
-					font-family: 'Open Sans', sans-serif
-					font-size: 1em;
-					position: relative;
-					user-select: none;
-					scroll-behavior: smooth;
-				}
+						font-family: "Open Sans", sans-serif;
+						font-size: 1em;
+						position: relative;
+						user-select: none;
+						scroll-behavior: smooth;
+					}
 
 				h1,
 				h2 {
