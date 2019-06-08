@@ -1,10 +1,29 @@
 import PropTypes from "prop-types";
-import Link from "next/link";
+import { withRouter } from "next/router";
 
-const ActivityLink = ({ activity, imgName, imgAlt, title }) => (
-	<Link href={`/activities/${activity}`}>
-		<a>
+const ActivityLink = ({ activity, imgName, imgAlt, title, router }) => {
+	const href = `/activities/${activity}`;
+
+	const styleA = {
+		color: router.pathname === href ? "#fff" : null
+	};
+
+	const styleImg = {
+		boxShadow:
+			router.pathname === href
+				? "0.1em 0.1em 0.8em 0.0325em rgba(0, 0, 0, 0.3),		0.1em 0.1em 0.8em 0.0325em rgba(255, 255, 255, 0.3)"
+				: null
+	};
+
+	const handleClick = e => {
+		e.preventDefault();
+		router.push(href);
+	};
+
+	return (
+		<a href={href} onClick={handleClick} style={styleA}>
 			<img
+				style={styleImg}
 				className="rounded"
 				src={`/static/images/${imgName}_70.jpg`}
 				alt={imgAlt}
@@ -41,14 +60,15 @@ const ActivityLink = ({ activity, imgName, imgAlt, title }) => (
 				}
 			`}</style>
 		</a>
-	</Link>
-);
+	);
+};
 
 ActivityLink.propTypes = {
 	activity: PropTypes.string.isRequired,
 	imgName: PropTypes.string.isRequired,
 	imgAlt: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired
+	title: PropTypes.string.isRequired,
+	router: PropTypes.object.isRequired
 };
 
-export default ActivityLink;
+export default withRouter(ActivityLink);

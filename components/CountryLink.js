@@ -1,10 +1,29 @@
 import PropTypes from "prop-types";
-import Link from "next/link";
+import { withRouter } from "next/router";
 
-const CountryLink = ({ country, imgName, imgAlt, title }) => (
-	<Link href={`/countries/${country}`}>
-		<a>
+const CountryLink = ({ country, imgName, imgAlt, title, router }) => {
+	const href = `/countries/${country}`;
+
+	const styleA = {
+		color: router.pathname === href ? "black" : null
+	};
+
+	const styleImg = {
+		boxShadow:
+			router.pathname === href
+				? "0.2em 0.2em 0.8em 0.0625em rgba(0, 0, 0, 0.3), 0.3em 0.3em 0.8em 0.0625em rgba(0, 0, 0, 0.5)"
+				: null
+	};
+
+	const handleClick = e => {
+		e.preventDefault();
+		router.push(href);
+	};
+
+	return (
+		<a href={href} onClick={handleClick} style={styleA}>
 			<img
+				style={styleImg}
 				className="rounded"
 				src={`/static/images/${imgName}_97.jpg`}
 				alt={imgAlt}
@@ -33,20 +52,21 @@ const CountryLink = ({ country, imgName, imgAlt, title }) => (
 					text-decoration: none;
 					color: var(--mainColor);
 				}
-				img: hover {
+				a img:hover {
 					box-shadow: 0.2em 0.2em 0.8em 0.0625em rgba(0, 0, 0, 0.3),
 						0.3em 0.3em 0.8em 0.0625em rgba(0, 0, 0, 0.5);
 				}
 			`}</style>
 		</a>
-	</Link>
-);
+	);
+};
 
 CountryLink.propTypes = {
 	country: PropTypes.string.isRequired,
 	imgName: PropTypes.string.isRequired,
 	imgAlt: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired
+	title: PropTypes.string.isRequired,
+	router: PropTypes.object.isRequired
 };
 
-export default CountryLink;
+export default withRouter(CountryLink);
