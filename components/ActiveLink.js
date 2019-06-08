@@ -2,8 +2,15 @@ import { withRouter } from "next/router";
 import PropTypes from "prop-types";
 
 function ActiveLink({ children, router, href }) {
+	const checkPath = () => {
+		const regex = /[^/]+/;
+		let result = router.pathname.match(regex);
+		result = result === null ? "/" : `/${result[0]}`;
+		return result;
+	};
+
 	const style = {
-		color: router.pathname === href ? "#fff" : "none"
+		color: checkPath() === href ? "#fff" : "none"
 	};
 
 	const handleClick = e => {
