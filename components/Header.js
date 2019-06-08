@@ -6,8 +6,10 @@ import ActiveLink from "../components/ActiveLink";
 const Header = () => {
 	useEffect(() => {
 		function addOpacity() {
-			document.querySelector("nav").classList.add("nav-opacity");
-			document.querySelector("nav").classList.remove("py-3");
+			if (document.documentElement.scrollTop > 17) {
+				document.querySelector("nav").classList.add("nav-opacity");
+				document.querySelector("nav").classList.remove("py-3");
+			}
 		}
 		function removeOpacity() {
 			document.querySelector("nav").classList.remove("nav-opacity");
