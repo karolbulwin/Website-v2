@@ -1,0 +1,8 @@
+.using-mouse :focus:not(:disabled) {
+  outline: none;
+}
+:focus:not(:disabled) {
+  outline-color: rgba(255, 145, 0, 0.5);
+  outline-style: solid;
+  outline-width: 0.125em;
+}
